@@ -9,6 +9,6 @@
         android:id="@+id/rv_dosen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/rv_item_dosen"
+        tools:listitem="@layout/rv_item_dosen"/>
 
 </FrameLayout>

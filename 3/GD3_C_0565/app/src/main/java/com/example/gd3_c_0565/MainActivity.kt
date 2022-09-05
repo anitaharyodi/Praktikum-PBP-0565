@@ -28,24 +28,24 @@ class MainActivity : AppCompatActivity() {
         val btnLogin: Button = findViewById(R.id.btnLogin)
 
         btnClear.setOnClickListener {
-            inputUsername.editText.setText("")
-            inputPassword.editText.setText("")
+            inputUsername.getEditText()?.setText("")
+            inputPassword.getEditText()?.setText("")
 
             Snackbar.make(mainLayout, "Text Cleared Success", Snackbar.LENGTH_LONG).show()
         }
 
         btnLogin.setOnClickListener(View.OnClickListener {
             var checkLogin = false
-            val username: String = inputUsername.editText.text.toString()
-            val password: String = inputPassword.editText.text.toString()
+            val username: String = inputUsername.getEditText()?.getText().toString()
+            val password: String = inputPassword.getEditText()?.getText().toString()
 
             if(username.isEmpty()) {
-                inputUsername.error("Username must be filled with text")
+                inputUsername.setError("Username must be filled with text")
                 checkLogin = false
             }
 
             if(password.isEmpty()) {
-                inputPassword.error("Password must be filled with text")
+                inputPassword.setError("Password must be filled with text")
                 checkLogin = false
             }
 

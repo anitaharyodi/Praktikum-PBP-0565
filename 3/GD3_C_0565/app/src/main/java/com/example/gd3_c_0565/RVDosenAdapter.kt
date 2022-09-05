@@ -28,3 +28,4 @@ class RVDosenAdapter(private val data: Array<Dosen>) : RecyclerView.Adapter<RVDo
         val tvNamaDosen : TextView = itemView.findViewById(R.id.tv_nama_dosen)
         val tvDetailsDosen : TextView = itemView.findViewById(R.id.tv_details_dosen)
     }
+}
