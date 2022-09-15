@@ -75,7 +75,13 @@ class MainActivity : AppCompatActivity() {
         editTextEmail!!.text.clear()
         textViewName.text = ""
         textViewEmail.text = ""
+//        val editor: SharedPreferences.Editor =
+//            sharedPreferences!!.edit()
+//        editor.putString(name, null)
+//        editor.putString(email, null)
+//        editor.apply()
         Toast.makeText(baseContext, "Cleared data",
         Toast.LENGTH_SHORT).show()
+
     }
 }
